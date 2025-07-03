@@ -8,9 +8,9 @@ const Footer = () => {
         <footer className="py-[5rem] bg-bg-secondary flex flex-col gap-[1rem] items-center justify-center">
             <div>
                 <p className="text-[1.6rem]">
-                    &copy;Ankit Bhagat aka AnnonymousBanda
+                    &copy;Khushi Dwivedi 2024. All rights reserved.
                 </p>
-                <a href="mailto:annonymous007banda@gmail.com">
+                <a href="mailto:khushid830@gmail.com">
                     <img
                         src={mail}
                         alt="mail logo"
@@ -23,7 +23,7 @@ const Footer = () => {
                 <ul className="flex flex-row items-center gap-[1rem]">
                     <li>
                         <a
-                            href="https://github.com/AnnonymousBanda"
+                            href="https://github.com/khushi830"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
@@ -36,20 +36,7 @@ const Footer = () => {
                     </li>
                     <li>
                         <a
-                            href="https://x.com/Annonym_usBanda"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                        >
-                            <img
-                                src={twitter}
-                                alt="socail media logo"
-                                className="w-[4rem]"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.linkedin.com/in/ankit-bhagat-4836aa2a7"
+                            href="https://www.linkedin.com/in/khushi-dwivedi-97b28a285/"
                             rel="noopener noreferrer"
                             target="_blank"
                         >
