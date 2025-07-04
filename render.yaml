@@ -1,21 +1,20 @@
 services:
   - type: web
-    name: express-api
-    env: node
-    rootDir: backend
+    name: exercisedb-frontend
+    env: docker
+    repo: https://github.com/khushi830/Ecercise_DB
+    rootDir: client
     plan: free
-    buildCommand: npm install
-    startCommand: node server.js
-    envVars:
-      - key: NODE_ENV
-        value: production
     autoDeploy: true
+    envVars:
+      - fromGroup: exercisedb-frontend-env
 
   - type: web
-    name: react-app
-    env: static
-    rootDir: frontend
+    name: exercisedb-backend
+    env: docker
+    repo: https://github.com/khushi830/Ecercise_DB
+    rootDir: server
     plan: free
-    buildCommand: npm install && npm run build
-    staticPublishPath: build
     autoDeploy: true
+    envVars:
+      - fromGroup: exercisedb-backend-env
